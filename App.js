@@ -5,7 +5,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            placeholder: 'Enter your ES6+ here!',
+            placeholder: 'Enter your ES6+/JSX/React here!',
             output: '',
             err: ''
         }
@@ -14,8 +14,8 @@ class App extends React.Component {
     render() {
         return(
             <div>
-                <header>{this.state.err}</header>
-                <div>
+                <header><span>{this.state.err}</span></header>
+                <div className="container">
                     <textarea onChange={this.update} defaultValue={this.state.placeholder}></textarea>
                     <pre>{this.state.output}</pre>
                 </div>

@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    min-height: 5vh;
+    font-family: monospace;
+    font-size: 20px;
+    color: red;
+    background-color: pink;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    height: 95vh;
+}
+
+pre, textarea {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #222;
+}
+
+pre {
+    background-color: #f8f8f8;
+}
+
+textarea:focus {
+    outline: none;
+}
